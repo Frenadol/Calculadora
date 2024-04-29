@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>github.com.Frenadol</groupId>
-    <artifactId>Calculadora5</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>dam.ed</groupId>
+    <artifactId>Calculadora</artifactId>
+    <version>1.1</version>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -27,4 +27,11 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Frenadol/https://github.com/Frenadol/Calculadora.git</url>
+        </repository>
+    </distributionManagement>
 </project>
