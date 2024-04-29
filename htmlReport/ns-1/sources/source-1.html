@@ -1,0 +1,173 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Calculadora</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">github.com.Frenadol</a>
+</div>
+
+<h1>Coverage Summary for Class: Calculadora (github.com.Frenadol)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Calculadora</td>
+<td class="coverageStat">
+  <span class="percent">
+    28,6%
+  </span>
+  <span class="absValue">
+    (2/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    36,4%
+  </span>
+  <span class="absValue">
+    (4/11)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">Calculadora$OperacionInvalidaException</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    37,5%
+  </span>
+  <span class="absValue">
+    (3/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    41,7%
+  </span>
+  <span class="absValue">
+    (5/12)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package github.com.Frenadol;
+&nbsp;
+<b class="fc">&nbsp;public class Calculadora {</b>
+&nbsp;
+&nbsp;
+&nbsp;    double suma(double a, double b) {
+<b class="nc">&nbsp;        return a + b;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    double resta(double minuendo, double sustraendo) {
+<b class="nc">&nbsp;        return minuendo - sustraendo;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    double multiplica(double a, double b) {
+<b class="nc">&nbsp;        return a * b;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    double divide(double dividendo, double divisor) throws Exception {
+<b class="nc">&nbsp;        if (divisor == 0) {</b>
+<b class="nc">&nbsp;            throw new Exception(&quot;El divisor es 0&quot;);</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return dividendo / divisor;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    double potencia(double base, double exponente) {
+<b class="nc">&nbsp;        return Math.pow(base, exponente);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    double raizCuadrada(double radicando) throws OperacionInvalidaException {
+<b class="fc">&nbsp;        if(radicando&lt;0) {</b>
+<b class="fc">&nbsp;            throw new OperacionInvalidaException(&quot;No se puede calcular la raiz cuadra de un número negativo&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return Math.sqrt(radicando);</b>
+&nbsp;
+&nbsp;    }
+&nbsp;    public class OperacionInvalidaException extends Throwable{
+<b class="fc">&nbsp;        public OperacionInvalidaException(String s){</b>
+&nbsp;
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-04-23 09:22</div>
+</div>
+</body>
+</html>
